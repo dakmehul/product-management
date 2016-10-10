@@ -1,7 +1,7 @@
 package dao.Impl
 
 import dao.ProductRepository
-import model.{Category, Product}
+import model.Product
 
 /**
   * Created by mehulshah on 27/08/16.

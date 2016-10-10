@@ -1,5 +1,5 @@
-import dao.Impl.{CategoryRepositoryImpl, ProductRepositoryImpl}
-import services.{CategoryService, ProductService}
+import dao.Impl.{CategoryRepositoryImpl, EmployeeRepositoryImpl, ProductRepositoryImpl}
+import services.{CategoryService, EmployeeService, ProductService}
 
 /**
   * Created by mehulshah on 27/08/16.
@@ -20,6 +20,12 @@ object Main {
     val categoryService = new CategoryService(CategoryRepositoryImpl())
     val categories = categoryService.getAllProductCategory()
     println("\n"+"Total Categories :" +categories.length+"\n")
+
+    val employeeService = new EmployeeService(EmployeeRepositoryImpl())
+    employeeService.getAllEmployee()
+
+
     categories.foreach(println)
+
   }
 }
